@@ -1,45 +1,12 @@
 from random import shuffle
+    
 
-#define the function
-def user_details():
-            print("Hello", name, ". Welcome to the Basketball Quiz!")
-while True:
-    name = input("Please Enter Your Name: ")
-    if name.isalpha():
-        break
-
-    else:
-        print("Please Enter Only Letters")
-       
-#define the function
-def instructions():
-            while True:
-                        inst = input("Would you like to read the instructions?\na)yes\nb)no\nEnter here: ")
-                        if inst == "yes" or inst == "y" or inst == "A" or inst == "a":
-                                    print("""The instructions are simple, you will be given random multiple choice general
-knowledge questions about basketball and you have to choose which answer you think is right.
-Answer the multi choice questions by entering (a/b/c/d). For every question you get right you earn a point.
-""")
-                                    break
-                        if inst == "no" or inst == "n" or inst == "B" or inst == "b" :
-                                    print("Welcome to Isaac's basketball quiz")
-                                    break
-                        else:
-                                    print("Please enter the options")
-#define the function
-def status():
-            status = input("Would you like to play the quiz?\n Enter y to continue or n to exit the quiz : ").lower()
-            if status == "y" or status == "yes":
-                        print("Thank you, we shall begin shortly...")
-            else:
-                        print("Thank you for taking the time to...")
-                        exit()
 #define the function
 def rounds():
             global r, total
             while True:
                         try:
-                                    r = int(input("Please enter the number of questions you would like to answer between 1-10: "))
+                                    r = int(input("Please enter the number of questions you would like to answer between 1-10: \n"))
                                     if 0<r<=10:
                                                 break
                                     else:
@@ -62,9 +29,6 @@ quiz = [
  ],
 ["How many players in total can be on the court at the same time?",
  {'answer' : 'd', 'choice' : ' \nA. 3 \nB. 2 \nC. 5 \nD. 10 \n'}
- ],
-["What is the best basketball league in the world?",
- {'answer' : 'a', 'choice' : '\nA. NBA \nB. NBL \nC. WNBA \nD. CBA \n'}
  ],
 ["What is the best basketball league in the world?",
  {'answer' : 'a', 'choice' : '\nA. NBA \nB. NBL \nC. WNBA \nD. CBA \n'}
@@ -94,9 +58,6 @@ index = 0
 score = 0
 optnum = 0
 
-user_details()
-instructions()
-status()
 rounds()
 
 while r>0:
@@ -127,7 +88,7 @@ while r>0:
 print("You have succesfully completed Isaac's General Knowledge Basketball quiz!")
 print(name,"Your final score is", score,"out of",total)
 print("That means you answered", (round(score/total*100,2)),"% of the questions correctly!")
-print("Thanks for playing")
+print("Thanks for playing\n")
 feedback = input("How would you rate the quiz from 1-5?: ")
 print("Thank you for the feedback!")
 exit()
