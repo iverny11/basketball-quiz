@@ -15,13 +15,13 @@ while True:
 def instructions():
             while True:
                         inst = input("Would you like to read the instructions?\na)yes\nb)no\nEnter here: ")
-                        if inst == "yes" or inst == "y" or inst == "A" or inst == "a":
+                        if inst == "yes" or inst == "y" or inst == "A" or inst == "a" or inst == "Yes":
                                     print("""The instructions are simple, you will be given random multiple choice general
 knowledge questions about basketball and you have to choose which answer you think is right.
 Answer the multiple choice questions by entering (a/b/c/d). For every question you get right you earn a point.
 """)
                                     break
-                        if inst == "no" or inst == "n" or inst == "B" or inst == "b" :
+                        if inst == "no" or inst == "n" or inst == "B" or inst == "b" or inst == "No" :
                                     print("Welcome to Isaac's basketball quiz")
                                     break
                         else:
@@ -30,10 +30,11 @@ Answer the multiple choice questions by entering (a/b/c/d). For every question y
 def status():
             status = input("Would you like to play the quiz?\n Enter y to continue or n to exit the quiz : ").lower()
             if status == "y" or status == "yes":
-                        print("Thank you, we shall begin shortly...")
+                        print("Thank you, we shall begin the General Knowledge Basketball Quiz shortly. \n")
             else:
-                        print("Thank you for taking the time to...")
+                        print("Thank you for taking the time to use my program.")
                         exit()
+
 #define the function
 def rounds():
             global r, total
@@ -62,9 +63,6 @@ quiz = [
  ],
 ["How many players in total can be on the court at the same time?",
  {'answer' : 'd', 'choice' : ' \nA. 3 \nB. 2 \nC. 5 \nD. 10 \n'}
- ],
-["What is the best basketball league in the world?",
- {'answer' : 'a', 'choice' : '\nA. NBA \nB. NBL \nC. WNBA \nD. CBA \n'}
  ],
 ["What is the best basketball league in the world?",
  {'answer' : 'a', 'choice' : '\nA. NBA \nB. NBL \nC. WNBA \nD. CBA \n'}
@@ -112,11 +110,11 @@ while r>0:
                         user_answer = input ("Please enter one of the options (a/b/c/d): ").lower().replace(' ','')
                         if user_answer == 'a' or user_answer == 'b' or user_answer == 'c' or user_answer == 'd':
                                     if user_answer == answer:
-                                                print("you are right!")
+                                               print("\n-----------------------------\nYou are correct, good job!\n-----------------------------\n")
                                                 score +=1
                                                 print("your score is", score)
                                     else:
-                                                print("you are wrong")
+                                                print("\n********************\nYou are incorrect!\n********************\n")
                                                 print("your score is still",score)
 
                                     del quiz[0]
