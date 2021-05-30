@@ -1,5 +1,5 @@
 #define the function
-def rounds():
+def range():
             global r, total
             while True:
                         try:
@@ -12,3 +12,4 @@ def rounds():
                                     print('Please enter numbers only')
 
             total = r
+range()
