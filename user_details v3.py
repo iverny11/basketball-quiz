@@ -1,19 +1,12 @@
-#Define the function
-def user_details(name):
-    print("Hello", name)
-#Determine if the input only consists of string, if no ask user to input only letters
+#define the function
+def user_details():
+            print("Hello", name, ". Welcome to the Basketball Quiz!")
 while True:
-    name = input("Please Enter Your Name : ").upper()
+    name = input("Please Enter Your Name: ")
     if name.isalpha():
         break
 
     else:
-        print("==============================")
-        print("Please Enter Only Letters A-Z")
-        print("==============================")
+        print("Please Enter Only Letters")
 
-
-user_details(name)
-        
-         
-
+user_details()
