@@ -1,5 +1,3 @@
-#instructions v3
-
 while True:
                         inst = input("Would you like to read the instructions?\na)yes\nb)no\nEnter here: ")
                         if inst == "yes" or inst == "y" or inst == "A" or inst == "a":
