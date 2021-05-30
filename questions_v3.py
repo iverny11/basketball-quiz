@@ -73,11 +73,11 @@ while r>0:
                         user_answer = input ("Please enter one of the options (a/b/c/d): ").lower().replace(' ','')
                         if user_answer == 'a' or user_answer == 'b' or user_answer == 'c' or user_answer == 'd':
                                     if user_answer == answer:
-                                                print("you are right!")
+                                                print("\n-----------------------------\nYou are correct, good job!\n-----------------------------\n")
                                                 score +=1
                                                 print("your score is", score)
                                     else:
-                                                print("you are wrong")
+                                                print("\n********************\nYou are incorrect!\n********************\n")
                                                 print("your score is still",score)
 
                                     del quiz[0]
