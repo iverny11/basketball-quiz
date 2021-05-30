@@ -111,8 +111,8 @@ while r>0:
                         if user_answer == 'a' or user_answer == 'b' or user_answer == 'c' or user_answer == 'd':
                                     if user_answer == answer:
                                                print("\n-----------------------------\nYou are correct, good job!\n-----------------------------\n")
-                                                score +=1
-                                                print("your score is", score)
+                                               score +=1
+                                               print("your score is", score)
                                     else:
                                                 print("\n********************\nYou are incorrect!\n********************\n")
                                                 print("your score is still",score)
@@ -123,7 +123,7 @@ while r>0:
                         else:
                                     print("Please enter the alphabet for chosen option")
 print("You have succesfully completed Isaac's General Knowledge Basketball quiz!")
-print(name,"Your final score is", score,"out of",total)
+print(name,"your final score is", score,"out of",total)
 print("That means you answered", (round(score/total*100,2)),"% of the questions correctly!")
 print("Thanks for playing\n")
 feedback = input("How would you rate the quiz from 1-5?: ")
