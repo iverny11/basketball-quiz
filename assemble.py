@@ -126,6 +126,14 @@ print("You have succesfully completed Isaac's General Knowledge Basketball quiz!
 print(name,"your final score is", score,"out of",total)
 print("That means you answered", (round(score/total*100,2)),"% of the questions correctly!")
 print("Thanks for playing\n")
-feedback = input("How would you rate the quiz from 1-5?: ")
+while True:
+        try:
+                 feedback = int(input("How would you rate the quiz from 1-5?:"))
+                 if 0<feedback<6:
+                          break
+                 else:
+                          print("Please enter numbers 1-5 only")
+        except:
+                print("Please enter an integer")
 print("Thank you for the feedback!")
 exit()
