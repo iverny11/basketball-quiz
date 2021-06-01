@@ -4,7 +4,7 @@ from random import shuffle
 def user_details():
             print("Hello", name, ". Welcome to the Basketball Quiz!")
 while True:
-    name = input("Please Enter Your Name: ")
+    name = input("Please Enter Your Name: ").capitalize()
     if name.isalpha():
         break
 
@@ -28,7 +28,7 @@ Answer the multiple choice questions by entering (a/b/c/d). For every question y
                                     print("Please enter the options")
 #define the function
 def status():
-            status = input("Would you like to play the quiz?\n Enter y to continue or n to exit the quiz : ").lower()
+            status = input("Would you like to play the quiz?\nEnter y to continue or n to exit the quiz : ").lower()
             if status == "y" or status == "yes":
                         print("Thank you, we shall begin the General Knowledge Basketball Quiz shortly. \n")
             else:
@@ -49,6 +49,7 @@ def rounds():
                                     print('Please enter numbers only')
 
             total = r
+
 
 #using dictionaries in order to store the questions, choices, and answers
 quiz = [
@@ -80,7 +81,7 @@ quiz = [
  {'answer' : 'c', 'choice' : '\nA. 11 feet \nB. 9 feet \nC. 10 feet \nD. 5 feet \n'}
  ],
 ["How many points is a layup worth?",
- {'answer' : 'c', 'choice' : '\nA. 2 \nB. 1 \nC. 4 \nD. 3 \n'}
+ {'answer' : 'a', 'choice' : '\nA. 2 \nB. 1 \nC. 4 \nD. 3 \n'}
  ],
 
 
@@ -96,6 +97,7 @@ user_details()
 instructions()
 status()
 rounds()
+print("\nNOTE: during the quiz if you would like to exit , enter xxx \n")
 
 while r>0:
             data = quiz[0]
@@ -120,20 +122,23 @@ while r>0:
                                     del quiz[0]
                                     r-=1
                                     break
+                        elif user_answer == 'xxx':
+                                  exit()
                         else:
-                                    print("Please enter the alphabet for chosen option")
+                                    print("Please enter the letter for the chosen option")
 print("You have succesfully completed Isaac's General Knowledge Basketball quiz!")
 print(name,"your final score is", score,"out of",total)
 print("That means you answered", (round(score/total*100,2)),"% of the questions correctly!")
 print("Thanks for playing\n")
 while True:
         try:
-                 feedback = int(input("How would you rate the quiz from 1-5?:"))
-                 if 0<feedback<6:
-                          break
-                 else:
-                          print("Please enter numbers 1-5 only")
+
+                  feedback = int(input("How would you rate the quiz from 1-5?:"))
+                  if 0<feedback<6:
+                           break
+                  else:
+                           print("Please enter numbers 1-5")
         except:
-                print("Please enter an integer")
+                  print("Please enter an integer")
 print("Thank you for the feedback!")
 exit()
