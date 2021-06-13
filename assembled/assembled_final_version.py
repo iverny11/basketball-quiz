@@ -2,7 +2,7 @@ from random import shuffle
 
 #define the function
 def user_details():
-            print("Hello", name, ". Welcome to the Basketball Quiz!")
+            print("\nHello", name, ". Welcome to the Basketball Quiz!")
 while True:
     name = input("Please Enter Your Name: ").capitalize()
     if name.isalpha():
@@ -30,7 +30,7 @@ Answer the multiple choice questions by entering (a/b/c/d). For every question y
 def status():
             status = input("Would you like to play the quiz?\nEnter y to continue or n to exit the quiz : ").lower()
             if status == "y" or status == "yes":
-                        print("Thank you, we shall begin the General Knowledge Basketball Quiz shortly. \n")
+                        print("\nThank you, we shall begin the General Knowledge Basketball Quiz shortly. \n")
             else:
                         print("Thank you for taking the time to use my program.")
                         exit()
@@ -40,7 +40,7 @@ def rounds():
             global r, total
             while True:
                         try:
-                                    r = int(input("Please enter the number of questions you would like to answer (between 1-10): \n"))
+                                    r = int(input("Please enter the number of questions you would like to answer (between 1-10): "))
                                     if 0<r<=10:
                                                 break
                                     else:
