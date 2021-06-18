@@ -25,12 +25,12 @@ Answer the multiple choice questions by entering (a/b/c/d). For every question y
                                     print("Welcome to Isaac's basketball quiz")
                                     break
                         else:
-                                    print("Please enter the options")
+                                    print("\nPlease enter the options")
 #define the function
 def status():
-            status = input("Would you like to play the quiz?\nEnter y to continue or n to exit the quiz : ").lower()
+            status = input("Would you like to play the quiz?\nEnter y to continue or anything else to exit the quiz : ").lower()
             if status == "y" or status == "yes":
-                        print("\nThank you, we shall begin the General Knowledge Basketball Quiz shortly. \n")
+                        print("\nThank you, we shall begin the Basketball Quiz shortly. \n")
             else:
                         print("Thank you for taking the time to use my program.")
                         exit()
@@ -125,7 +125,7 @@ while r>0:
                         elif user_answer == 'xxx':
                                   exit()
                         else:
-                                    print("Please enter the letter for the chosen option")
+                                    print("\nPlease enter the letter for the chosen option")
 print("You have succesfully completed Isaac's Basketball Quiz!")
 print(name,"your final score is", score,"out of",total)
 print("That means you answered", (round(score/total*100,2)),"% of the questions correctly!")
