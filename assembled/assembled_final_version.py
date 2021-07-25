@@ -1,5 +1,41 @@
 from random import shuffle
 
+#using dictionaries in order to store the questions, choices, and answers
+quiz = [
+["How many steps can you take without dribbling?",
+ {'answer' : 'b', 'choice' : ' \nA. 1 \nB. 2 \nC. 4 \nD. 7\n'}
+ ],
+["How many points is a 3 pointer worth? ",
+ {'answer' : 'c', 'choice' : ' \nA. 2 \nB. 7 \nC. 3 \nD. 4 \n'}
+ ],
+["Who invented basketball?",
+ {'answer' : 'd', 'choice' : ' \nA. Jerry West \nB. John Smith \nC. Michael Jordan \nD. James Naismith \n'}
+ ],
+["How many players in total can be on the court at the same time?",
+ {'answer' : 'd', 'choice' : ' \nA. 3 \nB. 2 \nC. 5 \nD. 10 \n'}
+ ],
+["What is the best basketball league in the world?",
+ {'answer' : 'a', 'choice' : '\nA. NBA \nB. NBL \nC. WNBA \nD. CBA \n'}
+ ],
+["Who is the most iconic basketball player of all time?",
+ {'answer' : 'b', 'choice' : '\nA. LeBron James \nB. Michael Jordan \nC. Kobe Bryant \nD. Stephen Curry \n'}
+ ],
+["How many points is a free throw worth?",
+ {'answer' : 'd', 'choice' : '\nA. 3 \nB. 2 \nC. 4 \nD. 1 \n'}
+ ],
+["What is the easiest way to score in basketball?",
+ {'answer' : 'a', 'choice' : '\nA. Layup \nB. Free throw \nC. 3 Pointer \nD. Floater \n'}
+ ],
+["How high is a normal basketball hoop?",
+ {'answer' : 'c', 'choice' : '\nA. 11 feet \nB. 9 feet \nC. 10 feet \nD. 5 feet \n'}
+ ],
+["How many points is a layup worth?",
+ {'answer' : 'a', 'choice' : '\nA. 2 \nB. 1 \nC. 4 \nD. 3 \n'}
+ ],
+
+
+]
+
 #define the function
 def user_details():
             print("\nHello", name, ". Welcome to the Basketball Quiz!")
@@ -51,41 +87,6 @@ def rounds():
             total = r
 
 
-#using dictionaries in order to store the questions, choices, and answers
-quiz = [
-["How many steps can you take without dribbling?",
- {'answer' : 'b', 'choice' : ' \nA. 1 \nB. 2 \nC. 4 \nD. 7\n'}
- ],
-["How many points is a 3 pointer worth? ",
- {'answer' : 'c', 'choice' : ' \nA. 2 \nB. 7 \nC. 3 \nD. 4 \n'}
- ],
-["Who invented basketball?",
- {'answer' : 'd', 'choice' : ' \nA. Jerry West \nB. John Smith \nC. Michael Jordan \nD. James Naismith \n'}
- ],
-["How many players in total can be on the court at the same time?",
- {'answer' : 'd', 'choice' : ' \nA. 3 \nB. 2 \nC. 5 \nD. 10 \n'}
- ],
-["What is the best basketball league in the world?",
- {'answer' : 'a', 'choice' : '\nA. NBA \nB. NBL \nC. WNBA \nD. CBA \n'}
- ],
-["Who is the most iconic basketball player of all time?",
- {'answer' : 'b', 'choice' : '\nA. LeBron James \nB. Michael Jordan \nC. Kobe Bryant \nD. Stephen Curry \n'}
- ],
-["How many points is a free throw worth?",
- {'answer' : 'd', 'choice' : '\nA. 3 \nB. 2 \nC. 4 \nD. 1 \n'}
- ],
-["What is the easiest way to score in basketball?",
- {'answer' : 'a', 'choice' : '\nA. Layup \nB. Free throw \nC. 3 Pointer \nD. Floater \n'}
- ],
-["How high is a normal basketball hoop?",
- {'answer' : 'c', 'choice' : '\nA. 11 feet \nB. 9 feet \nC. 10 feet \nD. 5 feet \n'}
- ],
-["How many points is a layup worth?",
- {'answer' : 'a', 'choice' : '\nA. 2 \nB. 1 \nC. 4 \nD. 3 \n'}
- ],
-
-
-]
 
 shuffle(quiz)
 
